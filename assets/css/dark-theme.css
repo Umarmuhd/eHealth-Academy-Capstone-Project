@@ -1,0 +1,142 @@
+.right {
+    margin: 0 auto;
+    margin-left: 35px;
+    align-content: center;
+}
+
+.dark-mode_box {
+    position: fixed;
+    z-index: 999;
+    top: 81px;
+    height: 100px;
+    text-align: center;
+}
+
+.dark-mode_box p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #0090FC;
+}
+
+.dark-mode_box img {
+    margin-right: 16px;
+}
+
+.dark-mode_box img:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.dark-mode-items_container {
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 18px;
+    margin-right: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 18px;
+    width: 32px;
+    background: rgba(11, 19, 53, 0.13);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background: #AAAAAA;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked+.slider {
+    /* background-color: #2196F3; */
+    background: rgba(11, 19, 53, 0.13);
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+input:checked+.slider.round:before {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: #0090FC;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.wrapper.dark-theme {
+    background: #090909;
+}
+
+.wrapper.dark-theme .title,
+.wrapper.dark-theme .contact-info .phone,
+.wrapper.dark-theme .item-body p,
+.wrapper.dark-theme .skills figcaption,
+.wrapper.dark-theme .item-body ul {
+    color: #FFFFFF;
+}
+
+.wrapper.dark-theme .item-body .light,
+.wrapper.dark-theme .item-body .year {
+    color: #AAAAAA;
+}
+
+
+/* Dark mode for small Screens */
+@media (max-width: 768px) {
+    .hide {
+        display: none;
+    }
+
+    .dark_mode_for_small {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        bottom: 30px;
+        height: 30px;
+        right: 20px;
+        text-align: center;
+    }
+}

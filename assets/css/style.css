@@ -1,0 +1,280 @@
+/* Colors */
+:root {
+    --dark-color: #000000;
+    --white-color: #ffffff;
+    --light-color: #AAAAAA;
+    --cyan-color: #EFF8FE;
+    --blue-color: #0090FC;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.8125rem;
+    font-family: "Open Sans", sans-serif;
+    background: var(--cyan-color);
+    color: var(--dark-color);
+}
+
+.main {
+    margin: 58px auto 0;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 2.817% 10px;
+}
+
+p {
+    font-size: 0.8125rem;
+    font-weight: normal;
+}
+
+.intro .item-body p {
+    line-height: 1.75;
+}
+
+.wrapper {
+    width: 817px;
+    margin: 0 auto;
+    margin-right: 0;
+    box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    background-color: var(--white-color);
+}
+
+.bold {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+.logo {
+    display: flex;
+}
+
+.my-avatar {
+    border-radius: 49px;
+    margin-right: 22px;
+}
+
+.title {
+    align-self: center;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #333333;
+}
+
+.title span {
+    font-weight: 600;
+}
+
+.contact-info {
+    list-style: none;
+    align-self: center;
+}
+
+.contact-item {
+    margin-bottom: 6px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.contact-info li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    padding-top: 53px;
+    padding-left: 18px;
+    margin: 0 20px;
+    padding-bottom: 52px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.item-title p {
+    font-size: 1.125rem;
+    line-height: 1.5625;
+    color: #0090fc;
+}
+
+.item-body p {
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+.intro .item-title {
+    margin-right: 156px;
+}
+
+.interests .item-title {
+    margin-right: 120px;
+}
+
+.interests .item-body {
+    align-self: center;
+}
+
+.skills .item-title {
+    margin-right: 151px;
+}
+
+.skills .item-body {
+    display: flex;
+}
+
+.skills figure {
+    margin-right: 14.27%;
+    text-align: center;
+}
+
+.skills figure:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.skills figure img {
+    height: 72px;
+}
+
+.skills figcaption {
+    padding-top: 12px;
+}
+
+.item-body .semi-bold {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.item-body .light,
+.year {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--light-color);
+}
+
+.education .item-title {
+    margin-right: 111px;
+}
+
+.education_item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.education_item .year {
+    align-self: flex-end;
+    margin-left: 107px;
+}
+
+.experience .item-title {
+    margin-right: 102px;
+}
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp .year {
+    align-self: flex-end;
+    margin-left: 220px;
+}
+
+.experience_item {
+    margin-bottom: 46px;
+}
+
+.experience_item:nth-last-of-type(1),
+.education_item:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.experience_info p,
+.education_info p {
+    margin-bottom: 6px;
+}
+
+.experience_info p:nth-last-of-type(1),
+.education_info p:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.experience_role {
+    width: 370px;
+    margin-top: 36px;
+}
+
+.experience_role li {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.experience_role li::before {
+    content: "-";
+    padding-right: 10px;
+}
+
+
+.project .item-title {
+    margin-right: 128px;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--blue-color);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.project .item-body p {
+    margin-bottom: 6px;
+}
+
+.project .item-body p:nth-last-of-type(1) {
+    margin: 0;
+}
+
+/* Scroll to Top */
+
+.goto-top {
+    margin-left: 23px;
+    position: fixed;
+    z-index: 999;
+    bottom: 52px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#go-top {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    color: var(--blue-color);
+}
+
+#go-top img {
+    width: 30px;
+    height: 30px;
+}
+
+.dark_mode_for_small {
+    display: none;
+}
