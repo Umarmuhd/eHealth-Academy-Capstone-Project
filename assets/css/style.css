@@ -468,8 +468,8 @@ svg {
 .light-mode-toggler {
     position: absolute;
     z-index: 999;
-    top: 1em;
-    right: 1em;
+    top: 3em;
+    right: 3em;
     color: white;
     border: 1px solid;
     outline: none;
