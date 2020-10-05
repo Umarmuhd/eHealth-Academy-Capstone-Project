@@ -488,3 +488,14 @@ svg {
 .hero img {
     border-radius: 100px 100px 200px 100px;
 }
+
+.mobile-controller {
+    margin: 20px 0 0;
+    justify-content: center;
+}
+
+.mobile-controller .left-controller a button b {
+    transform: rotate(180deg);
+    font-weight: 100;
+    margin: 0 5px 0 0;
+}

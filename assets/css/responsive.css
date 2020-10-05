@@ -80,20 +80,33 @@
 
     .mobile-controller {
         display: flex;
-        justify-content: center;
-        /* justify-content: space-between; */
         padding: 0 10%;
-        margin-top: 80px;
+        margin-bottom: 20px;
+        align-items: center;
     }
 
     .mobile-controller a {
         text-decoration: none;
-        color: #fff;
-        padding: 5px 10px;
-        background-color: #16161A;
+        margin: 5px;
     }
 
-    .wrapper.light-theme .mobile-controller a {
+    .mobile-controller a button {
+        background-color: #16161A;
+        color: #fff;
+        padding: .7rem 1rem;
+        font-size: 13px;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        font-family: "air-regular";
+    }
+
+    .wrapper.light-theme .mobile-controller a button {
+        color: black;
+        background-color: #f8f9fa;
+    }
+
+    .wrapper.light-theme .mobile-controller a button i {
         color: black;
         background-color: #f8f9fa;
     }
@@ -107,8 +120,8 @@
     }
 
     .home-controller {
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 
     .left-controller,
