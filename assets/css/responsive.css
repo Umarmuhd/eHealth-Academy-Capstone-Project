@@ -1,112 +1,133 @@
-@media screen and (max-width: 768px) {
-    .wrapper {
+@media (max-width:935px) {
+    .title {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about {
+        text-align: center;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    nav,
+    .social,
+    .right.hidden,
+    .left.hidden {
+        display: none;
+    }
+
+    .wrapper .left,
+    .wrapper .right {
         width: 100%;
     }
 
-    .main {
-        margin: 0;
+    .wrapper {
+        padding: 10% 20px 4%;
     }
 
-    .logo a {
-        display: none;
+    body,
+    html,
+    .wrapper {
+        height: 100%;
+        width: 100%;
     }
 
-    .title {
-        font-size: 2rem;
+    .name {
+        padding-top: 10px;
+        text-align: center;
     }
 
-    .section {
-        padding-left: 0;
+
+    .explore-container,
+    .copyright {
+        display: block;
+        text-align: center;
     }
 
-    .section .item-title {
-        margin-right: 0;
+    .explore-container a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #16161A;
+        padding: 8px 30px;
     }
 
-    .intro .item-body {
-        margin-left: 17.5%;
+    .wrapper.light-theme .explore-container a {
+        background-color: #343a40;
     }
 
-    .interests .item-body {
-        margin-left: 11%;
-    }
-
-    .skills .item-body {
-        margin-left: 15%;
+    .mobile-social {
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
-    .skills figure {
-        margin-right: 9%;
+    .mobile-social a {
+        margin: 3% 6%;
     }
 
-    .skills figure:nth-last-of-type(1) {
-        margin: 0;
+    .mobile-social a i {
+        color: white;
     }
 
-    .skills figure figcaption {
-        display: none;
+    .wrapper.light-theme a i {
+        color: black;
     }
 
-    .skills figure img {
-        height: 72px;
-        width: 60px;
-        margin-bottom: 12px;
-    }
-
-    .education .item-body {
-        margin-left: 9%;
-    }
-
-    .education_item,
-    .exp {
+    .footer {
         display: block;
     }
 
-    .education_item .year,
-    .exp .year {
-        margin: 0;
-        margin-top: 10px;
+    .mobile-controller {
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-between; */
+        padding: 0 10%;
+        margin-top: 80px;
     }
 
-    .experience .item-body {
-        margin-left: 8%;
+    .mobile-controller a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        background-color: #16161A;
     }
 
-    .experience_role {
-        width: 90%;
-        margin-top: 26px;
+    .wrapper.light-theme .mobile-controller a {
+        color: black;
+        background-color: #f8f9fa;
     }
 
-    .project .item-body {
-        margin-left: 12%;
+    .experience-btn.hidden,
+    .education-btn.hidden,
+    .projects-btn.hidden,
+    .skillInterests-btn.hidden,
+    .home-controller.hidden {
+        display: none;
+    }
+
+    .home-controller {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .left-controller,
+    .right-controller,
+    .home-controller {
+        text-align: center;
     }
 
     .right {
-        display: none;
-    }
-}
-
-@media (max-width: 360px) {
-
-    .info,
-    .section {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .logo {
-        margin-bottom: 12px;
-    }
-
-    .section .item-title {
-        margin-bottom: 12px;
-    }
-
-    .section .item-body {
-        margin: 0;
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10% 0 20px;
     }
 
 }

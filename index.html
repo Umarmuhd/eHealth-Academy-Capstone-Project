@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Required Meta tags -->
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
@@ -17,209 +21,268 @@
 
     <title>Umar Muhammad</title>
 
-    <!-- Light CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Dark mode CSS -->
-    <link rel="stylesheet" href="assets/css/dark-theme.css">
-
-    <!-- Mobile Responsive -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
 </head>
 
 <body>
-    <div class="main">
-        <div class="wrapper">
-            <!-- Nav bar Begins Here -->
-            <nav class="info">
-                <div class="logo">
-                    <a href="#"><img class="my-avatar" src="./assets/images/myAvatar.png" alt="My Avatar"
-                            width="69"></a>
-                    <div class="title">
-                        <span>Umar</span> Muhammad
+    <!-- <div class="mobile-wrap">
+        <div id="header"></div>
+        <div>
+            <div id="mobile">
+                <div class="base-container">
+                    <div class="hero">
+                        <h1 class="name">Umar Muhammad</h1>
                     </div>
                 </div>
-                <ul class="contact-info">
-                    <li class="contact-item phone">+234 8134660261</li>
-                    <li class="contact-item email"><a href="mailto:umarfarouqft@gmail.com">umarfarouqft@gmail.com</a>
+            </div>
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="left">
+            <div class="hero">
+                <div class="title">
+                    <h1 class="name"><span>Umar</span> Muhammad</h1>
+                    <img src="./assets/images/X-EYiBGq_400x400.jpg" alt="My Avatar">
+                </div>
+                <div class="about">
+                    <p>Hello &#128075; I am a <span class="highlight">Frontend Web Developer.</span> I create <span
+                            class="highlight">Fast</span> and
+                        <span class="highlight">Responsive</span> web Apps with
+                        <span class="highlight">Javascript</span>. I love learning new things & talking about tech
+                        and
+                        when am not coding I play <span class="highlight">Rubik's cube</span></p>
+                </div>
+                <div class="explore-container">
+                    <a href="#" id="explore">Explore</a>
+                </div>
+            </div>
+            <button id="light" class="light-mode-toggler">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                    <path fill="currentColor"
+                        d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                        transform="translate(-8 -8)" /></svg>
+            </button>
+            <nav>
+                <ul>
+                    <li class="active_menu">
+                        <small>
+                            00 <a href="#" id="work-experience">
+                                <img src="./assets/images/menu-line.d8dc808e.svg" alt=""> Work Experience</a>
+                        </small>
                     </li>
-                    <li class="contact-item github"><a href="https://umarmuhd.github.io">umarmuhd.github.io</a></li>
+                    <li>
+                        <small>
+                            01 <a href="#" id="education"><img src="./assets/images/menu-line.d8dc808e.svg" alt="">
+                                Education</a>
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            02<a href="#" id="skillsInterests"><img src="./assets/images/menu-line.d8dc808e.svg" alt="">
+                                Skills & Interest</a>
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            03<a href="#" id="projects"><img src="./assets/images/menu-line.d8dc808e.svg" alt="">
+                                Projects</a>
+                        </small>
+                    </li>
                 </ul>
             </nav>
-            <!-- Nav bar Ends Here -->
-
-            <div class="intro section">
-                <div class="item-title">
-                    <p class="bold">Intro</p>
+            <div class="footer">
+                <div class="social">
+                    <a href="mailto:umarfarouqft@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email <img
+                            src="./assets/images/arrow.4f604977.svg" alt="">
+                    </a>
+                    <a href="https://github.com/umarmuhd" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github" aria-hidden="true"></i> Github <img
+                            src="./assets/images/arrow.4f604977.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/mhstr_unique" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter" aria-hidden="true"></i> Twitter <img
+                            src="./assets/images/arrow.4f604977.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/umar-muhammad-zakari-99a564172/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn <img
+                            src="./assets/images/arrow.4f604977.svg" alt="">
+                    </a>
                 </div>
-                <div class="item-body">
-                    <p>Hi, I am a Frontend web developer.</p>
-                    <p>I create responsive and fast Web Apps</p>
-                    <p>I love learning new things and when am not coding I play Rubik's cube</p>
+                <div class="mobile-social">
+                    <a href="mailto:umarfarouqft@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/umarmuhd" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/mhstr_unique" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/umar-muhammad-zakari-99a564172/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
                 </div>
-            </div>
-
-            <div class="interests section">
-                <div class="item-title">
-                    <p class="bold">Interests</p>
-                </div>
-                <div class="item-body">
-                    <p>Frontend | Mobile App | Artificial Intelligence | IoT</p>
-                </div>
-            </div>
-
-            <div class="skills section">
-                <div class="item-title">
-                    <p class="bold">Skills</p>
-                </div>
-                <div class="item-body">
-                    <figure>
-                        <a href="https://www.w3schools.com/html/html_intro.asp">
-                            <img src="./assets/images/logos_html-5.png" alt="HTML 5 Image" width="51.28">
-                        </a>
-                        <figcaption>HTML 5</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="https://en.wikipedia.org/wiki/CSS">
-                            <img src="./assets/images/logos_css-3.png" alt="CSS 3 Image" width="51.28">
-                        </a>
-                        <figcaption>CSS3</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/Javascript">
-                            <img src="./assets/images/logos_javascript.png" alt="Javascript Image" width="73">
-                        </a>
-                        <figcaption>Javascript</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="https://jquery.com/">
-                            <img src="./assets/images/jquery.gif" alt="Jquery Image" width="72">
-                        </a>
-                        <figcaption>JQuery UI</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="https://www.python.org/">
-                            <img src="./assets/images/python-7be70baaac.png" alt="Python Image" width="68">
-                        </a>
-                        <figcaption>Python 3</figcaption>
-                    </figure>
+                <div class="copyright">
+                    <p class="copyright-text">© 2020</p>
                 </div>
             </div>
-
-            <div class="education section">
-                <div class="item-title">
-                    <p class="bold">Education</p>
-                </div>
-                <div class="item-body">
-                    <div class="education_item">
-                        <div class="education_info">
-                            <p class="semi-bold">Medicine and Surgery</p>
-                            <p>Federal University Dutse</p>
-                            <p class="light">Jigawa, Nigeria</p>
-                        </div>
-                        <div class="year">OCTOBER 2018 - PRESENT</div>
+        </div>
+        <div class="right hidden">
+            <div>
+                <div class="work-experience active">
+                    <div class="experience-title">
+                        <h2>Experience</h2> <span></span>
                     </div>
-                    <div class="education_item">
-                        <div class="education_info">
-                            <p class="semi-bold">Sciences</p>
-                            <p>Federal Government College Kano</p>
-                            <p class="light">Kano, Nigeria</p>
-                        </div>
-                        <div class="year">SEPTEMBER 2014 - JULY 2018</div>
+                    <div class="experience-item">
+                        <h3>I4G Community Challenge - Fullstack Developer</h3>
+                        <p class="location">Remote <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                        <p class="date">SEPTEMBER 2020</p>
+                        <p>Participated in Ingressive for Good - Community Challenge where my team and I built
+                            Aider-resume Builder. A web app use for producing an eye-catching resume.</p>
                     </div>
-                    <div class="education_item">
-                        <div class="education_info">
-                            <p class="semi-bold">General</p>
-                            <p>Federal Science & Technical College Doma</p>
-                            <p class="light">Nassarawa, Nigeria</p>
-                        </div>
-                        <div class="year">SEPTEMBER 2012 - JUNE 2014</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience section">
-                <div class="item-title">
-                    <p class="bold">Experience</p>
-                </div>
-                <div class="item-body">
-                    <div class="experience_item">
-                        <div class="exp">
-                            <div class="experience_info">
-                                <p class="semi-bold">I4G Community Challenge</p>
-                                <p>Fullstack Web Developer</p>
-                                <p class="light">Remote</p>
-                            </div>
-                            <div class="year">SEPTEMBER 2020</div>
-                        </div>
-                        <ul class="experience_role">
-                            <li>Participated in Ingressive for Good - Community Challenge where my team and I built
-                                Aider-resume Builder. A web app use for producing an eye-catching resume.</li>
-                        </ul>
-                    </div>
-                    <div class="experience_item">
-                        <div class="exp">
-                            <div class="experience_info">
-                                <p class="semi-bold">HNG Internship - 7</p>
-                                <p>Frontend Web Developer</p>
-                                <p class="light">Remote</p>
-                            </div>
-                            <div class="year">MAY 2020 - AUGUST 2020</div>
-                        </div>
-                        <ul class="experience_role">
+                    <div class="experience-item">
+                        <h3>HNG Internship 7 - Frontend Developer</h3>
+                        <p class="location">Remote <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                        <p class="date">JUNE 2020 - AUGUST 2020</p>
+                        <p>
                             <li>Implemented 3 landing page template for local businesses</li>
                             <li>Implemented an Iteration of piggy-vest interest Calculator</li>
                             <li>Implemented an iterated version of Start.ng website e.t.c</li>
-                        </ul>
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <div class="project section">
-                <div class="item-title">
-                    <p class="bold">Projects</p>
+                <div class="education">
+                    <div class="education-title">
+                        <h2>Education</h2>
+                        <span></span>
+                    </div>
+                    <div class="education-items">
+                        <div class="education_item">
+                            <div class="education_info">
+                                <p class="semi-bold">Medicine and Surgery</p>
+                                <p class="school-name">Federal University Dutse</p>
+                                <p class="light">Jigawa, Nigeria</p>
+                            </div>
+                            <div class="year">OCTOBER 2018 - PRESENT</div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_info">
+                                <p class="semi-bold">Sciences</p>
+                                <p class="school-name">Federal Government College Kano</p>
+                                <p class="light">Kano, Nigeria</p>
+                            </div>
+                            <div class="year">SEPTEMBER 2014 - JULY 2018</div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_info">
+                                <p class="semi-bold">General</p>
+                                <p class="school-name">Federal Science & Technical College Doma</p>
+                                <p class="light">Nassarawa, Nigeria</p>
+                            </div>
+                            <div class="year">SEPTEMBER 2012 - JUNE 2014</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item-body">
-                    <p>
-                        <a
-                            href="https://github.com/Umarmuhd/Aider-Resume-Builder">github.com/Umarmuhd/Aider-Resume-Builder</a>
-                    </p>
-                    <p><a href="https://github.com/Umarmuhd/Start.ng">github.com/Umarmuhd/Start.ng</a></p>
-                    <p><a
-                            href="https://github.com/Umarmuhd/PiggyVest-Interest-Calculator">github.com/Piggyvest-Interest-Calculator</a>
-                    </p>
-                </div>
-            </div>
 
-            <div id="darkBtnS" class="dark_mode_for_small">
-                <a href="#"><img class="moon" src="./assets/images/moon.svg" alt=""></a>
-                <a href="#"><img class="sun hide" src="./assets/images/sun.svg" alt=""></a>
-            </div>
-        </div>
-        <div class="right">
-            <div class="dark-mode_box">
-                <div class="dark-mode-items_container">
-                    <img src="./assets/images/sun.svg" alt="">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span> <br>
-                    </label>
-                    <img src="./assets/images/moon.svg" alt="">
+                <div class="skills-interests">
+                    <div class="skills">
+                        <div class="skills-title">
+                            <h2>Skills</h2>
+                            <span></span>
+                        </div>
+                        <div class="skill-items">
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Javascript</a></li>
+                                <li><a href="#">Mongo DB</a></li>
+                                <li><a href="#">Heroku</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">JQuery UI</a></li>
+                                <li><a href="#">EJS</a></li>
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">Wordpress</a></li>
+                                <li><a href="#">Netlify</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Node Js</a></li>
+                                <li><a href="#">Express Js</a></li>
+                                <li><a href="#">Git</a></li>
+                                <li><a href="#">Prototyping</a></li>
+                                <li><a href="#">Materialize</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <div class="interests-title">
+                            <h2>Interests</h2>
+                            <span></span>
+                        </div>
+                        <div class="interests-items">
+                            <p>Frontend | Mobile App | Artificial Intelligence | IoT</p>
+                        </div>
+                    </div>
                 </div>
-                <p>Light Mode</p>
+
+                <div class="projects">
+                    <div class="projects-title">
+                        <h2>Projects</h2>
+                        <span></span>
+                    </div>
+                    <div class="projects-items">
+                        <div class="project-item">
+                            <h3>Aider Resume</h3>
+                            <p class="technologies">HTML - CSS - Bootstrap - Javascript - Jquery UI - Python</p>
+                            <a href="aider-resume.netlify.com"><i class="fa fa-eye" aria-hidden="true"></i> live</a>
+                            <a href="#"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                        </div>
+                        <div class="project-item">
+                            <h3>Web Developer Portfolio</h3>
+                            <p class="technologies">HTML - CSS - Bootstrap</p>
+                            <a href="web-dev-port.netlify.com"><i class="fa fa-eye" aria-hidden="true"></i> live</a>
+                            <a href="#"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="goto-top">
-                <a onclick="topFunction()" id="go-top">
-                    <img src="./assets/images/back_to_top.svg" alt=""><br>
-                    Back to top
-                </a>
+            <div class="mobile-controller">
+                <div class="left-controller">
+                    <a href="#" id="experience-Lbtn" class="experience-btn hidden"><i class="fa fa-arrow-circle-left"
+                            aria-hidden="true"></i>
+                        Experience</a>
+                    <a href="#" id="education-Lbtn" class="education-btn hidden"><i class="fa fa-arrow-circle-left"
+                            aria-hidden="true"></i>
+                        Education</a>
+                    <a href="#" id="skillInterests-Lbtn" class="skillInterests-btn hidden"><i
+                            class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                        Skills
+                        & Interests</a>
+                </div>
+                <div class="home-controller hidden">
+                    <a href="#"><i class="fa fa-home home-btn" aria-hidden="true"></i></a>
+                </div>
+                <div class="right-controller">
+                    <a href="#" id="education-Rbtn" class="education-btn hidden">Education <i
+                            class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                    <a href="#" id="skillInterests-Rbtn" class="skillInterests-btn hidden">Skills & Interests <i
+                            class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                    <a href="#" id="projects-Rbtn" class="projects-btn hidden">Projects <i
+                            class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
